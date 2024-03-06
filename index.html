@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors game</title>
+</head>
+
+<body>
+    <div class="game">
+        <div class="header">
+            <div class="intro">
+                <h1 class="space-h1-white">Rock Paper Scissors</h1>
+                <p class="space-p-info">A minigame made by: Chebbi Mohamed Ayoub</p>
+                <div class="game-mode">
+                    <button class="mode-btn fst-5" ><p class="mode-type">First to 5</p></button>
+                    <button class="mode-btn fst-10"><p class="mode-type">First to 10</p></button>
+                    <button class="mode-btn fst-20"><p class="mode-type">First to 20</p></button>
+                </div>
+            </div>
+            <div class="scoreboard-container">
+                <div class="scoreboard user-sc">
+                    <h1 class="user-score">0</h1>
+                    <p class="username">You</p>
+                </div>
+                <div class="scoreboard cpu-sc">
+                    <h1 class="cpu-score">0</h1>
+                    <p class="username">CPU</p>
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="game-buttons">
+                <button class="button rock">
+                    <img class="button-img" src="assets/rock.png">
+                </button>
+                <button class="button paper">
+                    <img class="button-img" src="assets/paper.png">
+                </button>
+                <button class="button scissors">
+                    <img class="button-img" src="assets/scissors.png">
+                </button>
+            </div>
+            <div class="user-game">
+                <div class="winner user-w"><h1>⭐</h1></div>
+                <div class="user-overlay"><h1 class="wait-text user-wait-text"></h1></div>
+                <img class="user-img game-img" src="assets/rockin.png">
+            </div>
+            <div class="cpu">
+                <div class="winner cpu-w"><h1>⭐</h1></div>
+                <div class="cpu-game"><h1 class="wait-text cpu-wait-text">CPU CHOICE</h1></div>
+                <div class="cpu">
+                <img class="cpu-img game-img" src="assets/cpu_start.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
