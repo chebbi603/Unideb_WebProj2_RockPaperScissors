@@ -123,6 +123,21 @@ body{
     background-color: #bebebe;
     transition: 0.2s linear;
 }
+
+.restart{
+    padding: 1vh 1vw 1vh 1vw;
+    background-color: rgb(26, 197, 111);
+    color:white;
+    opacity: 0;
+    border: 0px;
+    border-radius: 8px;
+    transition: 0.2s linear;
+}
+.restart:hover{
+    background-color: rgb(18, 172, 95);;
+    transition: 0.2s linear;
+}
+
 .selected{
     padding: 1vh 1vw 1vh 1vw;
     background-color: #f0ba40;

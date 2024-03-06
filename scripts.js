@@ -26,7 +26,7 @@ document.querySelector(".fst-20").addEventListener('click', e => {
 let user_img = document.querySelector(".user-img");
 let cpu_img = document.querySelector(".cpu-img");
 
-
+document.querySelector(".restart").classList.remove("visible");
 let rock_btn = document.querySelector(".rock");
 let paper_btn = document.querySelector(".paper");
 let scissors_btn = document.querySelector(".scissors");
@@ -108,6 +108,7 @@ rock_btn.addEventListener("click",  e => {
         rock_btn.classList.remove("btn-selected")
         paper_btn.disabled= true;
         scissors_btn.disabled = true;
+        document.querySelector(".restart").classList.add("visible");
     }
     }
 }
@@ -146,6 +147,7 @@ paper_btn.addEventListener("click", e => {
         rock_btn.classList.remove("btn-selected")
         paper_btn.disabled= true;
         scissors_btn.disabled = true;
+        document.querySelector(".restart").classList.add("visible");
     }
     }
 }
@@ -183,8 +185,11 @@ scissors_btn.addEventListener("click", e => {
         rock_btn.classList.remove("btn-selected")
         paper_btn.disabled= true;
         scissors_btn.disabled = true;
+        document.querySelector(".restart").classList.add("visible");
     }
     }
 }
 )
-
+document.querySelector(".restart").addEventListener("click",  e => {
+    location.reload();
+});
